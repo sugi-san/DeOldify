@@ -420,7 +420,8 @@ def get_artistic_image_colorizer(
 
 
 def show_image_in_notebook(image_path: Path):
-    ipythondisplay.display(ipythonimage(str(image_path)))
+    #ipythondisplay.display(ipythonimage(str(image_path)))
+    print('')###
 
 
 def show_video_in_notebook(video_path: Path):
