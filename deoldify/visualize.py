@@ -428,8 +428,8 @@ def show_video_in_notebook(video_path: Path):
     encoded = base64.b64encode(video)
     ipythondisplay.display(
         HTML(
-            data='''<video alt="test" autoplay 
-                loop controls style="height: 400px;">
+            data='''<video alt="test" 
+                controls style="height: 400px;">
                 <source src="data:video/mp4;base64,{0}" type="video/mp4" />
              </video>'''.format(
                 encoded.decode('ascii')
